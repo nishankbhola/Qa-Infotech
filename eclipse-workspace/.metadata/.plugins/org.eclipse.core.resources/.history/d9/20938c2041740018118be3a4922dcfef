@@ -1,0 +1,47 @@
+package FirstProject;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.*;
+public class FirstClass {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.get("http://10.0.1.86/tatoc");
+        driver.findElement(By.cssSelector("a")).click();
+        driver.findElement(By.className("greenbox")).click();    
+        driver.switchTo().frame("main");    
+        boolean    check = true;
+        while (check==true) {    
+            WebElement a = driver.findElement(By.id("answer"));
+            String box1 = a.getAttribute("class");
+            driver.switchTo().frame("child");
+            WebElement b = driver.findElement(By.id("answer"));
+            String box2 = b.getAttribute("class");
+            driver.switchTo().parentFrame();
+            if (box1.equals(box2)) {
+                driver.findElement(By.cssSelector("body > center:nth-child(1) > a:nth-child(9)")).click();
+                check = false;
+            }
+            else {
+                driver.findElement(By.cssSelector("body > center:nth-child(1) > a:nth-child(7)")).click();
+
+            }
+            
+        }
+        System.out.println("heheheheheh");
+      //  WebElement from = driver.findElement(By.cssSelector("#dragbox"));
+       // WebElement to = driver.findElement(By.cssSelector("#dropbox"));
+       
+       // Actions act = new Actions(driver);
+       // act.dragAndDrop(from, to).build().perform();
+       // System.out.println("done");
+        
+        
+
+    }
+}
+//export PATH=$PATH://usr/bin//geckodriver
