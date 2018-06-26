@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29183" started-at="2018-06-26T11:21:19Z" finished-at="2018-06-26T11:21:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="29183" started-at="2018-06-26T11:21:19Z" finished-at="2018-06-26T11:21:48Z">
+      <class name="selenium.Hris.HrisMain">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:selenium.Hris.HrisMain@4f933fd1]" name="LaunchBrowser" is-config="true" duration-ms="8298" started-at="2018-06-26T16:51:19Z" finished-at="2018-06-26T16:51:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="CkeckingValidLogin()[pri:0, instance:selenium.Hris.HrisMain@4f933fd1]" name="CkeckingValidLogin" duration-ms="15018" started-at="2018-06-26T16:51:27Z" finished-at="2018-06-26T16:51:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CkeckingValidLogin -->
+        <test-method status="PASS" signature="CheckingInvalidLogin()[pri:0, instance:selenium.Hris.HrisMain@4f933fd1]" name="CheckingInvalidLogin" duration-ms="5383" started-at="2018-06-26T16:51:42Z" finished-at="2018-06-26T16:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckingInvalidLogin -->
+        <test-method status="PASS" signature="CheckingBlankLogin()[pri:0, instance:selenium.Hris.HrisMain@4f933fd1]" name="CheckingBlankLogin" duration-ms="433" started-at="2018-06-26T16:51:47Z" finished-at="2018-06-26T16:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckingBlankLogin -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:selenium.Hris.HrisMain@4f933fd1]" name="CloseBrowser" is-config="true" duration-ms="1" started-at="2018-06-26T16:51:48Z" finished-at="2018-06-26T16:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- selenium.Hris.HrisMain -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
