@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [selenium.BingTranslator.AppTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="selenium.BingTranslator.AppTest">
+        <methods>
+          <include name="CheckTranslation"/>
+          <include name="LaunchBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- selenium.BingTranslator.AppTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [selenium.BingTranslator.AppTest] -->
